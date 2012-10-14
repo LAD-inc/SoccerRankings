@@ -17,7 +17,7 @@ $rankingsBlob = $match[0];
 //Extract info on each team
 
 //Club name
-preg_match_all ('/title="([^"]{1,})"/', $rankingsBlob, $clubNames);
+preg_match_all ('/title="([^"]{3,})"/', $rankingsBlob, $clubNames);
 
 //Club Id
 preg_match_all ('/\/([0-9]*)\.png/', $rankingsBlob, $clubIds);
